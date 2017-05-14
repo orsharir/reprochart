@@ -24,9 +24,9 @@ figwidth: 5.3
 0.99,29.2,12.6,10.9,10.1,11.7,12.7,13.5,13,31.2,33.0
 ```
 
-Then the resulting output is:
+Then the resulting output is: (for high-res [see here](examples/example1.pdf))
 
-[Example chart](examples/example1.png)
+![Example chart](examples/example1.png)
 
 ## Usage
 
@@ -42,21 +42,21 @@ By default he script saves a pdf image of the resulted chart to ``<csv-filename>
 
 The following keys are currently supported (all keys are optional):
 
-    * title -- Large title for the chart.
-    * xtitle -- Title for the x-axis.
-    * ytitle -- Title for the y-axis.
-    * figheight -- The height of the figure in points.
-    * figwidth -- The width of the figure in points.
-    * fontsize -- The global fontsize.
-    * xfontsize -- Overrides global fontsize for the x values.
-    * yfontsize -- Overrides global fontsize for the y values.
-    * xtitlesize -- Overrides global fontsize for the x-axis title.
-    * ytitlesize -- Overrides global fontsize for the y-axis title.
-    * legendsize -- The size of the legend.
-    * xmargin -- The margin from the x-axis.
-    * ymargin -- The margin from the y-axis.
-    * xlogscale -- If ``<value> = true`` then uses log-scale for x-axis.
-    * ylogscale -- if ``<value> = true`` then uses log-scale for y-axis.
-    * ylimmin -- The minimal value for the y-axis.
-    * ylimmax -- The maximal value for the y-axis.
-    * ynumticks -- The number of ticks in the y-axis.
+ * title -- Large title for the chart.
+ * xtitle -- Title for the x-axis.
+ * ytitle -- Title for the y-axis.
+ * figheight -- The height of the figure in points.
+ * figwidth -- The width of the figure in points.
+ * fontsize -- The global fontsize.
+ * xfontsize -- Overrides global fontsize for the x values.
+ * yfontsize -- Overrides global fontsize for the y values.
+ * xtitlesize -- Overrides global fontsize for the x-axis title.
+ * ytitlesize -- Overrides global fontsize for the y-axis title.
+ * legendsize -- The size of the legend.
+ * xmargin -- The margin from the x-axis.
+ * ymargin -- The margin from the y-axis.
+ * xlogscale -- If ``<value> = true`` then uses log-scale for x-axis.
+ * ylogscale -- if ``<value> = true`` then uses log-scale for y-axis.
+ * ylimmin -- The minimal value for the y-axis.
+ * ylimmax -- The maximal value for the y-axis.
+ * ynumticks -- The number of ticks in the y-axis.
