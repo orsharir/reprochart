@@ -24,7 +24,9 @@ figwidth: 5.3
 0.99,29.2,12.6,10.9,10.1,11.7,12.7,13.5,13,31.2,33.0
 ```
 
-Then the resulting output is: [Example chart](examples/example1.png)
+Then the resulting output is:
+
+[Example chart](examples/example1.png)
 
 ## Usage
 
@@ -39,6 +41,7 @@ By default he script saves a pdf image of the resulted chart to ``<csv-filename>
 ## Supported Key-Value Pairs for Configuration
 
 The following keys are currently supported (all keys are optional):
+
     * title -- Large title for the chart.
     * xtitle -- Title for the x-axis.
     * ytitle -- Title for the y-axis.
