@@ -60,6 +60,7 @@ def process_chart(infile, outfile):
     YLIMMIN = 'ylimmin'
     YLIMMAX = 'ylimmax'
     YNUMTICKS = 'ynumticks'
+    PADDING = 'padding'
     # Read the rows of the CSV file
     rows = None
     options = dict()
@@ -114,6 +115,8 @@ def process_chart(infile, outfile):
         options[YLIMMAX] = 100
     if YNUMTICKS not in options:
         options[YNUMTICKS] = 10
+    if PADDING not in options:
+        options[PADDING] = 0.1 # default from Matplotlib code
     # Convert the rows to headers, x values and the different y values
     headers = rows[0]
     data = rows[1:]
@@ -177,7 +180,7 @@ def process_chart(infile, outfile):
     # Set the figure to use a legend and place it in the lower right corner
     plt.legend(loc='lower left', prop={'size':options[LEGENDSIZE]})
     # Save the plot to res.pdf using tight bounds around the figure
-    plt.savefig(outfile, bbox_inches='tight')
+    plt.savefig(outfile, bbox_inches='tight', pad_inches=options[PADDING])
     
 def main():
     parser = argparse.ArgumentParser(description='Process csv files with special headers into pdf charts and latex tables.')

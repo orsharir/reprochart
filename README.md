@@ -60,3 +60,4 @@ The following keys are currently supported (all keys are optional):
  * ylimmin -- The minimal value for the y-axis.
  * ylimmax -- The maximal value for the y-axis.
  * ynumticks -- The number of ticks in the y-axis.
+ * padding -- The amount of padding surrounding the saved figure.
